@@ -1,0 +1,31 @@
+﻿@model Assessment7.Models.Guest
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<form action="~/Home/UpdateGuests" method="post">
+
+    <label> First Name: <input type="text" name="FirstName" placeholder="first name" pattern="[A-Z][a-z]*" required /> </label> <br />
+
+    <label> Last Name: <input type="text" name="LastName" placeholder="last name" pattern="[A-Z][a-z]*" required /> </label> <br />
+
+    <label> Date: <input type="date" name="AttendanceDate" min="2018-12-20" max="2018-12-21" required /> </label> <br />
+
+    <label> Email: <input type="email" name="EmailAddress" placeholder="email address" required /> </label> <br />
+
+    <label> Guest? (first name only) <input type="text" name="Guest1" placeholder="guest first name, or none" pattern="[A-Z][a-z]*" value="none" required /> </label> <br />
+
+    <input type="submit" class="btn-default" /> <br />
+
+</form>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="~/home/index/"><button class="btn-danger">NEVERMIND, I DON'T WANT TO SIGN UP!</button></a>
